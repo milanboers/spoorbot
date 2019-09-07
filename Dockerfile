@@ -1,6 +1,6 @@
 FROM python:alpine
 
-RUN apk update && apk add build-base gcc git
+RUN apk update && apk add build-base gcc git libffi-dev
 
 RUN pip3 install pipenv
 RUN mkdir -p /app/spoorbot
